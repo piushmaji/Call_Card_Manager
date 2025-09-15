@@ -36,8 +36,18 @@ It is built using **HTML, CSS, and JavaScript** with **localStorage** support, s
 ---
 
 ## 🖼️ Demo
-👉 [Live Demo on Netlify](https://your-netlify-link.netlify.app) *(add after deployment)*
+👉 [Live Demo on On your Browser](https://call-card-manager.vercel.app/)
 
 ---
 
 ## 📂 Project Structure
+
+.
+├── index.html # Main HTML
+├── style.css # Styling
+├── script.js # App logic
+├── screenshots/ # Screenshots for README
+│ ├── home.png
+│ ├── add-card.png
+│ └── themes.png
+└── README.md

@@ -22,8 +22,25 @@ let dotBlue = document.querySelector(".dot-blue");
 let dotTeal = document.querySelector(".dot-teal");
 
 window.addEventListener("DOMContentLoaded", () => {
+    let allTasks = JSON.parse(localStorage.getItem("tasks")) || [];
+
+    // If no cards in localStorage, add a default card
+    if (allTasks.length === 0) {
+        const defaultCard = {
+            name: "Piush Maji",
+            imgUrl: "https://i.pinimg.com/736x/94/36/2d/94362d5ffc8d53fccd1b4c2692926296.jpg",
+            hometown: "West Bengal",
+            purpose: "Tech Enthusiast",
+            category: "Default"
+        };
+
+        allTasks.push(defaultCard);
+        localStorage.setItem("tasks", JSON.stringify(allTasks));
+    }
+
     showCards();
 });
+
 
 
 //save to Local Storage
@@ -90,6 +107,10 @@ reminderForm.addEventListener("submit", function (dets) {
 
     const notification = document.getElementById('saveNotification');
     notification.classList.add('show');
+    notificationTimeout = setTimeout(() => {
+        notification.classList.remove('show');
+        notificationTimeout = null;
+    }, 3000);
 });
 
 //background change btns 
