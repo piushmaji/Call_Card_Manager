@@ -36,13 +36,20 @@ It is built using **HTML, CSS, and JavaScript** with **localStorage** support, s
 ---
 
 ## 🖼️ Demo
+<<<<<<< HEAD
 👉 [Live Demo on On your Browser](https://call-card-manager.vercel.app/)
+=======
+👉 [Live Demo on Your Browser](https://call-card-manager.vercel.app/) 
+>>>>>>> 5ee5f36ef4b5ed0f511a0ab49889c86fd22a186a
 
 ---
 
 ## 📂 Project Structure
 
+<<<<<<< HEAD
 .
+=======
+>>>>>>> 5ee5f36ef4b5ed0f511a0ab49889c86fd22a186a
 ├── index.html # Main HTML
 ├── style.css # Styling
 ├── script.js # App logic
