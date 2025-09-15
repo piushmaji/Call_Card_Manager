@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallCard Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="app-header">
+        <h1>CardCall</h1>
+        <p>Manage your contacts with style</p>
+    </header>
+
+    <div class="app-container">
+        <!-- Left Navigation -->
+        <div class="left-nav">
+            <button id="addCardBtn" class="nav-btn">+</button>
+            <button id="upBtn" class="nav-btn">↑</button>
+            <button id="downBtn" class="nav-btn">↓</button>
+        </div>
+
+        <!-- Card Stack -->
+        <div class="card-stack">
+        </div>
+
+        <!-- Color Dots -->
+        <div class="color-dots">
+            <div class="color-dot dot-black"></div>
+            <div class="color-dot dot-purple"></div>
+            <div class="color-dot dot-blue"></div>
+            <div class="color-dot dot-teal"></div>
+        </div>
+    </div>
+
+    <!-- Modal for adding reminders -->
+    <div class="modal " id="reminderModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">New Call</div>
+                <button class="closeBtn">&times;</button>
+            </div>
+
+            <form id="reminderForm">
+                <div class="form-group">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-input" id="title" placeholder="Enter your name" autocomplete="off"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Image Url</label>
+                    <input class="form-imgurl" id="imgUrl" placeholder="https://via.placeholder.com/WIDTHxHEIGHT"
+                        autocomplete="off" required></input>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Home Town</label>
+                    <input class="form-hometown" id="hometown" placeholder="Enter Your Home Town" autocomplete="off"
+                        required></input>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Purpose</label>
+                    <input class="form-purpose" id="purpose" placeholder="e.g., Quick appointment note"
+                        autocomplete="off" required></input>
+                </div>
+
+
+
+                <div class="form-group">
+                    <label class="form-label">Category</label>
+                    <select class="form-select" id="category" required>
+                        <option value="select" selected disabled>Select</option>
+                        <option value="work">Work</option>
+                        <option value="personal">Personal</option>
+                        <option value="important">Important</option>
+                        <option value="urgent">Urgent</option>
+                    </select>
+                </div>
+                <div class="modal-buttons">
+                    <button type="button" class=" cancelBtn modal-btn cancel-btn">Cancel</button>
+                    <button type="submit" class="modal-btn save-btn">Create Note</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="notification" id="saveNotification">
+        Card saved successfully!
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
