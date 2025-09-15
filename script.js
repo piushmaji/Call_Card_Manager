@@ -27,10 +27,10 @@ window.addEventListener("DOMContentLoaded", () => {
     // If no cards in localStorage, add a default card
     if (allTasks.length === 0) {
         const defaultCard = {
-            name: "Piush Maji",
-            imgUrl: "https://i.pinimg.com/736x/94/36/2d/94362d5ffc8d53fccd1b4c2692926296.jpg",
-            hometown: "West Bengal",
-            purpose: "Tech Enthusiast",
+            name: "Olivia Chen",
+            imgUrl: "https://i.pinimg.com/736x/ff/83/1a/ff831a233c72dfa3f51f5ed3c55efcc4.jpg",
+            hometown: "San Francisco",
+            purpose: "Marketing Lead at Innovate Inc",
             category: "Default"
         };
 
