@@ -36,7 +36,7 @@ It is built using **HTML, CSS, and JavaScript** with **localStorage** support, s
 ---
 
 ## 🖼️ Demo
-👉 [Live Demo on Netlify](https://your-netlify-link.netlify.app) *(add after deployment)*
+👉 [Live Demo on Your Browser](https://call-card-manager.vercel.app/) 
 
 ---
 
