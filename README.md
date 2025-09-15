@@ -41,3 +41,12 @@ It is built using **HTML, CSS, and JavaScript** with **localStorage** support, s
 ---
 
 ## 📂 Project Structure
+
+├── index.html # Main HTML
+├── style.css # Styling
+├── script.js # App logic
+├── screenshots/ # Screenshots for README
+│ ├── home.png
+│ ├── add-card.png
+│ └── themes.png
+└── README.md
